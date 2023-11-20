@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: serif;
+	text-decoration: none;
 }
 
 html {
@@ -20,7 +21,7 @@ html {
 	margin-top: 30px;
 }
 
-#page-1 .outercontainer {
+ .outercontainer {
 	width: 50vw;
 	height: 900px;
 	margin: auto;
@@ -30,12 +31,7 @@ html {
 	border-radius: 10px;
 }
 
-#page-1 img {
-	width: 65px;
-	height: 65px;
-}
-
-#page-1 .innercontainer {
+ .innercontainer {
 	height: 750px;
 	width: 40vw;
 	margin: auto;
@@ -45,21 +41,37 @@ html {
 	border-style: groove;
 }
 
+#page-1 img {
+	width: 65px;
+	height: 65px;
+	margin: auto;
+}
+
 #page-1 .wlogo {
 	display: flex;
 	justify-content: space-between;
 }
 
+#page-1 .text {
+	padding: 0 10px 0 10px;
+}
+
 #page-1 .mpclogo {
 	float: left;
+	margin-left: -25px;
 }
 
 #page-1 .text h4, p {
 	text-align: center;
 }
 
+.titlepage {
+	line-height: 30px;
+}
+
 #page-1 .bitlogo {
 	float: right;
+	margin-right: -22px;
 }
 
 #page-1 .maintext {
@@ -71,8 +83,42 @@ html {
 	line-height: 25px;
 }
 
-#page-1 .text a {
-	text-decoration: none;
+
+/* tablet */
+@media (max-width: 1200px) {
+	html {
+		font-size: 13.2px;
+	}
+	.outercontainer {
+		width: 80vw;
+		height: 850px;
+	}
+	.innercontainer {
+		width: 60vw;
+		height: 700px;
+	}
+	#page-1 img {
+		width: 55px;
+		height: 55px;
+	}
 }
 
-@media query ()
+/* mobile */
+@media (max-width: 768px) {
+	html {
+		font-size: 10px;
+	}
+	.outercontainer {
+		width: 90vw;
+		height: 780px;
+	}
+	.innercontainer {
+		width: 75vw;
+		height: 650px;
+	}
+	#page-1 img {
+		width: 50px;
+		height: 50px;
+
+	}
+}

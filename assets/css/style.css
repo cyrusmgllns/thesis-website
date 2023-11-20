@@ -30,19 +30,41 @@ html {
 	border-radius: 10px;
 }
 
+#page-1 img {
+	width: 65px;
+	height: 65px;
+}
+
 #page-1 .innercontainer {
-	height: 800px;
+	height: 750px;
 	width: 40vw;
 	margin: auto;
 	display: block;
-	margin-top: 50px;
+	margin-top: 70px;
 	background: #F3F3F3;
 	border-style: groove;
+}
+
+#page-1 .wlogo {
+	display: flex;
+	justify-content: space-between;
+}
+
+#page-1 .mpclogo {
+	float: left;
+}
+
+#page-1 .text h4, p {
 	text-align: center;
 }
 
-#page-1 .text {
+#page-1 .bitlogo {
+	float: right;
+}
+
+#page-1 .maintext {
 	padding: 10% 45px 40px 45px;
+	text-align: center;
 }
 
 #page-1 .researchers {
